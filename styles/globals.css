@@ -1,16 +1,160 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
+	outline: none;
+  }
+  h1, h2, h3, h4, h5 {
+	text-shadow: 0 0 8px #000;
+  }
+  
+  body, html {
+	height: 100%;
+  }
+  
+  pre {
+	text-align: left;
+	text-justify: newspaper;
+	font-size: 15px;
+	line-height: 20px;
+	padding: 20px;
+  
+	/* handling resizing */
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  }
+  
+  #root {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .App {
+	text-align: center;
+	width: 90%;
+  }
+  
+  .profile-info-container {
+	animation-name: loadingInfo;
+	animation-duration: 5s; 
+  }
+  
+  
+  .social-section {
+	animation-name: loadingInfo;
+	animation-duration: 5s;
+  }
+  
+  @keyframes loadingInfo {
+	from {
+	  -webkit-filter: blur(10px);
+	  -moz-filter: blur(10px);
+	  -o-filter: blur(10px);
+	  -ms-filter: blur(10px);
+	  filter: blur(10px);
+	}
+  
+	to {
+	  -webkit-filter: blur(0px);
+	  -moz-filter: blur(0px);
+	  -o-filter: blur(0px);
+	  -ms-filter: blur(0px);
+	  filter: blur(0px);
+	}
+  }
+  
+  body:before {
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+  
+	display: block;
+	background-image: url('../public/assets/images/general/background.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	-webkit-filter: blur(7px);
+	  -moz-filter: blur(7px);
+	  -o-filter: blur(7px);
+	  -ms-filter: blur(7px);
+	  filter: blur(7px);
+  }
+  
+  .App-logo {
+	height: 40vmin;
+	pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
+  }
+  
+  .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
+  
+  .App-link {
+	color: #61dafb;
+	position: fixed;
+	height: 100vh;
+	width:100vh;
+  }
+  
+  @keyframes App-logo-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  
+  .job-description {
+	border-radius: 15px;
+	transform: translateY(10%);
+	position: absolute;
+	background: black;
+	opacity: 0.8;
+  
+	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 3s; /* Firefox < 16 */
+	-ms-animation: fadein 3s; /* Internet Explorer */
+	-o-animation: fadein 3s; /* Opera < 12.1 */
+	animation: fadein 3s;
+  }
+  
+  @keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 0.8; }
+  }
+  
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 0.8; }
+  }
+  
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 0.8; }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+	from { opacity: 0; }
+	to   { opacity: 0.8; }
+  }
