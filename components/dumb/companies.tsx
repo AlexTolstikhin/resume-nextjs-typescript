@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
 import classNames from 'classnames';
 import { makeStyles } from '@mui/styles';
 import AscendifyLogo from '../../public/assets/images/companyIcons/AscendifyLogo.png';
@@ -40,7 +40,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false)}
 			>
 				<a href="https://www.sofi.com" rel="noopener noreferrer" target="_blank">
-					<Image alt="SofiLogo" className={classNames(images, 'company-logo')} src={SofiLogo}  />            
+					<img alt="SofiLogo" className={classNames(images, 'company-logo')} src={SofiLogo}  />            
 				</a>
 			</div>
 			<div
@@ -49,7 +49,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false)}
 			>
 				<a href="https://www.ascendify.com" rel="noopener noreferrer" target="_blank">
-					<Image alt="AscendifyLog" className={classNames(images, 'company-logo')} src={AscendifyLogo}  />            
+					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src={AscendifyLogo}  />            
 				</a>
 			</div>
 			<div
@@ -58,7 +58,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="https://en.wikipedia.org/wiki/Good_Technology" rel="noopener noreferrer" target="_blank">
-					<Image alt="Good Technology Logo" className={classNames(images, 'company-logo')} src={GoodTechnologyLogo} />            
+					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src={GoodTechnologyLogo} />            
 				</a>
 			</div>
 			<div
@@ -67,7 +67,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="http://www.isd.dp.ua/en/" rel="noopener noreferrer" target="_blank">
-					<Image alt="ISD Logo" src={ISDLogo} className={classNames(images, 'company-logo')} />            
+					<img alt="ISD Logo" src={ISDLogo} className={classNames(images, 'company-logo')} />            
 				</a>
 			</div>
 		</section>
