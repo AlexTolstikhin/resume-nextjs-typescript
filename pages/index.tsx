@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
 import { MainComponent } from '../components/smart/index';
+import { ThemeProvider } from '@mui/styles';
+
+const theme = {};
 
 const Home: NextPage = () => {
   return (
-    <MainComponent />
+    <ThemeProvider theme={theme}>
+      <MainComponent />
+    </ThemeProvider>
   )
 }
 

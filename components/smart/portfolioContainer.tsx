@@ -13,7 +13,6 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100%'
     },
     skillsInfo: {
         display: 'flex',
@@ -61,20 +60,10 @@ export const PortfolioContainer = () => {
 
 	return (
 		<Grid container>
-			<Grid item xs={12} style={{ height: '100vh' }}>
+			<Grid item xs={12} style={{ height: '95vh', display: 'flex', justifyContent: 'center', 'alignItems': 'center' }}>
 				<section className={classes.contactInfo}>
 					<ContactInfo />
 					<SocialIcons />
-				</section>
-			</Grid>
-			<Grid item xs={12} style={{ height: '100%'}}>
-				<section className={classes.skillsInfo}>
-					<Skills />
-				</section>
-			</Grid>
-			<Grid item xs={12} style={{ height: '100vh'}}>
-			<section className={classes.contactInfo}>
-					<Typography className={classes.listTitle} variant="h4">Companies I worked in: </Typography>
 					<Companies />
 				</section>
 			</Grid>

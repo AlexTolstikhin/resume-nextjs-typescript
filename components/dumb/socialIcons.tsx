@@ -6,7 +6,7 @@ import classNames from 'classnames';
 
 const useStyles = makeStyles({
     icons: {
-        fontSize: '3.0rem',
+        fontSize: '40px !important',
 
         '&:hover': {
             transform: 'rotate(360deg)',

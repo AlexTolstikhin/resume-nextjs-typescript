@@ -6,10 +6,11 @@ import classNames from 'classnames';
 const useStyles = makeStyles({
     mainContainer: {
     },
-    greetingSection: {
+    heroName: {
         fontWeight: 'bold'
     },
-    subtitleSection: {
+    subtitle: {
+      textAlign: 'center'
     },
     descriptionSection: {
     }
@@ -20,8 +21,8 @@ const ContactInfo = () => {
 	
 	return (
 		<section className={classNames("profile-info-container", classes.mainContainer)}>
-			<Typography className={classes.greetingSection} variant="h2">Alex Tolstikhin</Typography>
-			<Typography className={classes.subtitleSection} variant="h4">Frontend Developer</Typography>
+			<Typography className={classes.heroName} variant="h2">Alex Tolstikhin</Typography>
+			<Typography className={classes.subtitle} variant="h4">Software Engineer</Typography>
 			<br />
 			<br />
 			<Divider />

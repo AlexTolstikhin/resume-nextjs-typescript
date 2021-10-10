@@ -4,10 +4,7 @@ a {
   h1, h2, h3, h4, h5 {
 	text-shadow: 0 0 8px #000;
   }
-  
-  body, html {
-	height: 100%;
-  }
+
   
   pre {
 	text-align: left;
@@ -40,10 +37,16 @@ a {
 	animation-duration: 5s; 
   }
   
+
+  .company-logo {
+    animation-name: loadingInfo;
+    animation-duration: 5s;
+  }
   
   .social-section {
-	animation-name: loadingInfo;
-	animation-duration: 5s;
+	  animation-name: loadingInfo;
+	  animation-duration: 5s;
+    height: 30px;
   }
   
   @keyframes loadingInfo {
@@ -96,7 +99,6 @@ a {
   
   .App-header {
 	background-color: #282c34;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -108,8 +110,6 @@ a {
   .App-link {
 	color: #61dafb;
 	position: fixed;
-	height: 100vh;
-	width:100vh;
   }
   
   @keyframes App-logo-spin {
