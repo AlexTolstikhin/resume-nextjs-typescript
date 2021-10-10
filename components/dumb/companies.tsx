@@ -40,7 +40,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false)}
 			>
 				<a href="https://www.sofi.com" rel="noopener noreferrer" target="_blank">
-					<img alt="SofiLogo" className={classNames(images, 'company-logo')} src={SofiLogo}  />            
+					<img alt="SofiLogo" className={classNames(images, 'company-logo')} src={`${SofiLogo}`}  />            
 				</a>
 			</div>
 			<div
@@ -49,7 +49,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false)}
 			>
 				<a href="https://www.ascendify.com" rel="noopener noreferrer" target="_blank">
-					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src={AscendifyLogo}  />            
+					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src={`${AscendifyLogo}`}  />            
 				</a>
 			</div>
 			<div
@@ -58,7 +58,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="https://en.wikipedia.org/wiki/Good_Technology" rel="noopener noreferrer" target="_blank">
-					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src={GoodTechnologyLogo} />            
+					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src={`${GoodTechnologyLogo}`} />            
 				</a>
 			</div>
 			<div
@@ -67,7 +67,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="http://www.isd.dp.ua/en/" rel="noopener noreferrer" target="_blank">
-					<img alt="ISD Logo" src={ISDLogo} className={classNames(images, 'company-logo')} />            
+					<img alt="ISD Logo" src={`${ISDLogo}`} className={classNames(images, 'company-logo')} />            
 				</a>
 			</div>
 		</section>
