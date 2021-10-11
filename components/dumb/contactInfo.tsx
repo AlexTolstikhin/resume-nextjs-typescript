@@ -7,6 +7,7 @@ const useStyles = makeStyles({
     mainContainer: {
     },
     heroName: {
+        textAlign: 'center',
         fontWeight: 'bold'
     },
     subtitle: {

@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { makeStyles } from '@mui/styles';
-import AscendifyLogo from '../../public/assets/images/companyIcons/AscendifyLogo.png';
+import AscendifyLogo from '/assets/images/companyIcons/AscendifyLogo.png';
 import GoodTechnologyLogo from '../../public/assets/images/companyIcons/GoodTechnologyLogo.png';
 import ISDLogo from '../../public/assets/images/companyIcons/ISDLogo.png';
 import SofiLogo from '../../public/assets/images/companyIcons/Sofi.png';
@@ -40,7 +40,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false)}
 			>
 				<a href="https://www.sofi.com" rel="noopener noreferrer" target="_blank">
-					<img alt="SofiLogo" className={classNames(images, 'company-logo')} src={`${SofiLogo}`}  />            
+					<img alt="SofiLogo" src='assets/images/companyIcons/Sofi.png' className={classNames(images, 'company-logo')}  />            
 				</a>
 			</div>
 			<div
@@ -48,8 +48,8 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseEnter={()=> toggleDescription(true, 'ascendify')}
 				onMouseLeave={()=> toggleDescription(false)}
 			>
-				<a href="https://www.ascendify.com" rel="noopener noreferrer" target="_blank">
-					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src={`${AscendifyLogo}`}  />            
+				<a href="https://www.ascendify.com<" rel="noopener noreferrer" target="_blank">
+					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src='assets/images/companyIcons/AscendifyLogo.png' />          
 				</a>
 			</div>
 			<div
@@ -58,7 +58,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="https://en.wikipedia.org/wiki/Good_Technology" rel="noopener noreferrer" target="_blank">
-					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src={`${GoodTechnologyLogo}`} />            
+					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src='assets/images/companyIcons/GoodTechnologyLogo.png' />            
 				</a>
 			</div>
 			<div
@@ -67,7 +67,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
 				<a href="http://www.isd.dp.ua/en/" rel="noopener noreferrer" target="_blank">
-					<img alt="ISD Logo" src={`${ISDLogo}`} className={classNames(images, 'company-logo')} />            
+					<img alt="ISD Logo" src='assets/images/companyIcons/ISDLogo.png' className={classNames(images, 'company-logo')} />            
 				</a>
 			</div>
 		</section>
