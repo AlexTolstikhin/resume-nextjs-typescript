@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, IconButton } from '@material-ui/core';
-import { Facebook, GitHub, LinkedIn, Instagram } from '@material-ui/icons';
+import { Link, IconButton } from '@mui/material';
+import { Facebook, GitHub, LinkedIn, Instagram } from '@mui/icons-material';
 import { makeStyles } from '@mui/styles';
 import classNames from 'classnames';
 

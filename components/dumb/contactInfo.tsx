@@ -1,6 +1,6 @@
 import React from 'react';
-import { Divider, Typography } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { Divider, Typography } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 import classNames from 'classnames';
 
 const useStyles = makeStyles({

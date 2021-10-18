@@ -2,13 +2,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Theme } from '@mui/material/styles';
 import { makeStyles } from '@mui/styles';
-import AscendifyLogo from '/assets/images/companyIcons/AscendifyLogo.png';
-import GoodTechnologyLogo from '../../public/assets/images/companyIcons/GoodTechnologyLogo.png';
-import ISDLogo from '../../public/assets/images/companyIcons/ISDLogo.png';
-import SofiLogo from '../../public/assets/images/companyIcons/Sofi.png';
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles((theme: Theme) => ({
 	mainSection: {
         display: 'flex',
         flexWrap: 'wrap',
@@ -22,9 +20,12 @@ const useStyles = makeStyles({
         width: '100%'
     },
     logoContainer: {
-        width: '200px'
+        width: '100px',
+        [theme.breakpoints.up('sm')]: {
+          width: '200px'
+        },
     }
-})
+}));
 
 interface companyProps {
 	toggleDescription: (a: boolean, b?: string) => void;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, List, ListItem, Typography } from '@material-ui/core';
+import { Grid, List, ListItem, Typography } from '@mui/material';
 
 const leftColumnSkills = ['React', 'Webpack', 'Javascript', 'CSS3', 'Mocha', 'Chai', 'SQL', 'Docker', 'Jenkins', 'Git'];
 const rightColumnSkills = ['Redux', 'ES6', 'HTML5', 'SASS', 'Material UI', 'Undescore.js', 'Jest', 'Enzyme', 'PHP', 'Jira'];
