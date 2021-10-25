@@ -3,7 +3,8 @@ import { Divider, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import classNames from 'classnames';
 
-const useStyles = makeStyles({
+const ContactInfo = () => {
+  const useStyles = makeStyles({
     mainContainer: {
     },
     heroName: {
@@ -15,9 +16,8 @@ const useStyles = makeStyles({
     },
     descriptionSection: {
     }
-});
+}, { name: 'muiContactInfo'});
 
-const ContactInfo = () => {
 	const classes = useStyles();
 	
 	return (
