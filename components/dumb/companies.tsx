@@ -49,7 +49,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseEnter={()=> toggleDescription(true, 'ascendify')}
 				onMouseLeave={()=> toggleDescription(false)}
 			>
-				<a href="https://www.ascendify.com<" rel="noopener noreferrer" target="_blank">
+				<a href="https://www.ascendify.com" rel="noopener noreferrer" target="_blank">
 					<img alt="AscendifyLog" className={classNames(images, 'company-logo')} src='assets/images/companyIcons/AscendifyLogo.png' />          
 				</a>
 			</div>
@@ -58,7 +58,7 @@ const Companies = ({ toggleDescription }: companyProps) => {
 				onMouseEnter={()=> toggleDescription(true, 'goodTechnology')}
 				onMouseLeave={()=> toggleDescription(false, )}
 			>
-				<a href="https://en.wikipedia.org/wiki/Good_Technology" rel="noopener noreferrer" target="_blank">
+				<a href="https://www.good.com" rel="noopener noreferrer" target="_blank">
 					<img alt="Good Technology Logo" className={classNames(images, 'company-logo')} src='assets/images/companyIcons/GoodTechnologyLogo.png' />            
 				</a>
 			</div>
